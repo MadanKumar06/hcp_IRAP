@@ -1,0 +1,30 @@
+.fall-prevention-container {
+  padding: 2rem 1rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .sub-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 0;
+    width: 100%;
+    h3 {
+      color: #464646;
+      font-size: 0.875rem;
+      font-weight: 400;
+      line-height: 1.3125rem;
+      margin: 0;
+    }
+  }
+  .sub-container:not(:last-child) {
+    border-bottom: 1px solid var(--color-primary-border-Line);
+  }
+  .sub-container:last-child {
+    padding-bottom: 0;
+  }
+  .sub-container:first-child {
+    padding-top: 0;
+  }
+}

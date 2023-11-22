@@ -1,0 +1,66 @@
+.aboutus-container {
+  text-align: center;
+  padding: 3.5rem 1rem 3rem 1rem;
+  .title {
+    color: var(--color-primary-Text);
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.875rem;
+  }
+  .section {
+    padding-top: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    & > div {
+      text-align: center;
+      border-radius: 0.5rem;
+      border: 1px solid var(--color-primary-border-Line);
+      padding: 1.5rem 1rem;
+      box-shadow: 0 0 2px 0 rgba(145, 158, 171, 0.2),
+        0 12px 24px -4px rgba(145, 158, 171, 0.12);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      min-height: 12.5rem;
+      max-width: 22.375rem;
+      -webkit-transition: 0.3s ease;
+      transition: 0.3s ease;
+      &:hover {
+        -webkit-transform: scale3d(1.08, 1.08, 1.08);
+        transform: scale3d(1.08, 1.08, 1.08);
+      }
+      h3 {
+        color: var(--color-primary-Text);
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1.5rem;
+      }
+      .MuiRating-root {
+        gap: 0.25rem;
+      }
+      p {
+        color: var(--color-primary-Text);
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 1.3125rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+      span {
+        color: var(--primary);
+        font-size: 0.875rem;
+        font-weight: 500;
+        line-height: 1.3125rem;
+        text-decoration-line: underline;
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.navbar-main-container {
+  background-color: var(--secondary);
+  position: sticky;
+  top: 0;
+  min-height: 3.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--size16);
+  z-index: 1;
+  img {
+    width: 8.44rem;
+    height: var(--size16);
+  }
+  .section-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+}

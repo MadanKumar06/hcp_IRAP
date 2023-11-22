@@ -1,0 +1,26 @@
+import PropTypes from "prop-types";
+
+export const propTypes = {
+  id: PropTypes.string,
+  label: PropTypes.string,
+  name: PropTypes.string,
+  fullWidth: PropTypes.bool,
+  type: PropTypes.string,
+  placeholder: PropTypes.string,
+  autoFocus: PropTypes.bool,
+  autoComplete: PropTypes.string,
+  className: PropTypes.string,
+  asterisk: PropTypes.bool,
+  required: PropTypes.bool,
+  disabled: PropTypes.bool,
+  error: PropTypes.string,
+  variant: PropTypes.oneOf(["outlined", "filled"], "standard"),
+  shrink: PropTypes.bool,
+  multiline: PropTypes.string,
+  maxRows: PropTypes.bool,
+  defaultValue: PropTypes.bool,
+  rows: PropTypes.string,
+  color: PropTypes.string,
+  focused: PropTypes.bool,
+  helperText: PropTypes.string,
+};

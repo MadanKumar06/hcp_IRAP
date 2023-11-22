@@ -1,0 +1,66 @@
+.App {
+  background: var(--secondary);
+}
+
+.MuiButton-root {
+  &:hover {
+    background-color: #b94629 !important;
+  }
+}
+// material ui textbox
+.inputfield-box {
+  & ::placeholder {
+    font-size: 0.875rem !important;
+    color: #818181 !important;
+    opacity: 1 !important;
+  }
+  .MuiInputLabel-root {
+    font-weight: 600 !important;
+    font-size: 1.125rem !important;
+    color: var(--color-secondary-Text) !important;
+  }
+  .MuiOutlinedInput-root {
+    input {
+      padding: 0.75rem;
+      font: unset !important;
+    }
+    &:hover .MuiOutlinedInput-notchedOutline {
+      border-color: var(--primary);
+    }
+    .MuiOutlinedInput-notchedOutline {
+      legend {
+        font-size: 1rem !important;
+      }
+    }
+  }
+  .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-color: var(--primary);
+  }
+  .MuiOutlinedInput-root {
+    &:hover .MuiOutlinedInput-notchedOutline {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+  }
+  .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border: 1px solid var(--primary);
+  }
+}
+
+.MuiFormControl-root {
+  .MuiOutlinedInput-root {
+    &:hover .MuiOutlinedInput-notchedOutline {
+      border-color: var(--primary);
+    }
+    input {
+      padding: 0.875rem;
+    }
+  }
+}
+
+@media (min-width: 1920px) {
+  #root {
+    max-width: 1920px;
+    margin: auto;
+  }
+}

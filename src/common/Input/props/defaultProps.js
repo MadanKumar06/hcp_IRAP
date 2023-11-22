@@ -1,0 +1,15 @@
+export const defaultProps = {
+  fullWidth: true,
+  type: "text",
+  autoFocus: false,
+  autoComplete: "off",
+  asterisk: false,
+  required: false,
+  disabled: false,
+  error: false,
+  variant: "outlined",
+  shrink: true,
+  multiline: false,
+  color: "",
+  focused: false,
+};

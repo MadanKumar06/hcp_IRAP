@@ -1,0 +1,32 @@
+.safety-container {
+  text-align: center;
+  .image-container {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .sub-container {
+    padding: 2.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    .section {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      h3 {
+        color: var(--color-primary-Text);
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1.5rem;
+      }
+      p {
+        color: var(--color-primary-Text);
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 1.3125rem;
+      }
+    }
+  }
+}
