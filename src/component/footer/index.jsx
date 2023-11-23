@@ -8,30 +8,46 @@ const Footer = ({ data }) => {
     <footer className="footer-main-container">
       <div className="footer-section">
         <div className="section-a">
-          <div>
+          <div className="image">
             <img src={data?.healthcraft_image} alt="header logo" />
           </div>
           <div>
-            <div>
-              <img src={data?.social_icons?.pinterest_icon} alt="" />
-            </div>
-            <div>
-              <img src={data?.social_icons?.linked_icon} alt="" />
-            </div>
-            <div>
-              <img src={data?.social_icons?.facebook_icon} alt="" />
-            </div>
-            <div>
-              <img src={data?.social_icons?.instagram_icon} alt="" />
-            </div>
+            <a
+              href={`${data?.social_icon_urls?.pinterest_url}`}
+              target="_blanks"
+              aria-label="pinterest"
+            >
+              <img src={data?.social_icons?.pinterest_icon} alt="pinterest" />
+            </a>
+            <a
+              href={`${data?.social_icon_urls?.linkedin_url}`}
+              target="_blanks"
+              aria-label="linkedin"
+            >
+              <img src={data?.social_icons?.linked_icon} alt="linkedin" />
+            </a>
+            <a
+              href={`${data?.social_icon_urls?.facebook_url}`}
+              target="_blanks"
+              aria-label="facebook"
+            >
+              <img src={data?.social_icons?.facebook_icon} alt="facebook" />
+            </a>
+            <a
+              href={`${data?.social_icon_urls?.instagram_url}`}
+              target="_blanks"
+              aria-label="instagram"
+            >
+              <img src={data?.social_icons?.instagram_icon} alt="instagram" />
+            </a>
           </div>
         </div>
         <div className="section-b">
-          <h3>Customer Support</h3>
-          <p>info@healthcraftproducts.com</p>
-          <p>Call Us: 613-822-1885</p>
-          <p>Toll Free: 1 (888) 619-9992</p>
-          <p>Contact Us</p>
+          <h3>{data?.title}</h3>
+          <p>{data?.email}</p>
+          <p>{data?.call}</p>
+          <p>{data?.toll_free}</p>
+          <p>{data?.contact_us}</p>
         </div>
       </div>
       <div className="bottom">

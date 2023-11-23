@@ -11,20 +11,20 @@ import AboutUsAection from "../../component/home/aboutusSection";
 import HCPMissionSection from "../../component/home/hcpMissionSection";
 import DownloadEBook from "../../component/home/downloadEBook";
 
-const Home = () => {
+const Home = ({ data }) => {
   return (
     <div className="home-container">
       <div className="banner-container">
-        <Banner />
+        <Banner {...data?.banner_section} />
       </div>
-      <FallPrevention />
-      <FallInHome />
-      <AgingPlace />
-      <SafetySection />
-      <ProcessSection />
-      <AboutUsAection />
-      <HCPMissionSection />
-      <DownloadEBook />
+      <FallPrevention data={data?.icon_section} />
+      <FallInHome {...data?.content_section} />
+      <AgingPlace {...data?.white_content_section} />
+      <SafetySection {...data?.white_content_section} />
+      <ProcessSection {...data?.points_section} />
+      <AboutUsAection {...data?.review_section} />
+      <HCPMissionSection {...data?.white_content_section_2} />
+      <DownloadEBook {...data?.form_section} />
     </div>
   );
 };

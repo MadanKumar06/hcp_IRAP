@@ -3,8 +3,12 @@
 }
 
 .MuiButton-root {
+  box-shadow: none !important;
+  border-radius: 5px !important;
+
   &:hover {
-    background-color: #b94629 !important;
+    color: var(--secondary) !important;
+    background-color: var(--primary) !important;
   }
 }
 // material ui textbox

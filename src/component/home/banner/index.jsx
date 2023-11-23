@@ -2,26 +2,25 @@ import React from "react";
 import "./styles.scss";
 
 import Button from "../../../common/button";
-function Banner() {
+import Link from "../../../common/Link";
+const Banner = (props) => {
+  const { background_image, button_text, description, title } = props;
   const backgroundStyle = {
-    background: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.60) 70.84%), url(${require("../../../assets/images/homepage/banner.png")}) lightgray 50% / cover no-repeat`,
+    background: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.60) 70.84%), url(${background_image}) lightgray 50% / cover no-repeat`,
   };
   return (
     <div className="home-banner-container" style={backgroundStyle}>
       <div className="section">
         <div>
-          <h3>
-            Your aging parents can live at home with Diginity & Independence
-          </h3>
-          <p>
-            Healthcraft products help those aging in place live safely in their
-            own home.
-          </p>
+          <h3>{title}</h3>
+          <p dangerouslySetInnerHTML={{ __html: description }} />
         </div>
-        <Button>Take our safe home assesment</Button>
+        <Link url={"/risk-fall"}>
+          <Button>{button_text}</Button>
+        </Link>
       </div>
     </div>
   );
-}
+};
 
 export default Banner;

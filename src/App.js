@@ -4,7 +4,7 @@ import theme from "./theme";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useDispatch, useSelector } from 'react-redux';
-import { getheader, getfooter } from './store/homeAction/action';
+import { getheader, getfooter, gethome } from './store/homeAction/action';
 
 import "./App.scss";
 import "./variables/colorVariables.module.scss";
@@ -22,8 +22,10 @@ const App = () => {
   const dispatch = useDispatch();
   const header = useSelector((state) => state.header);
   const footer = useSelector((state) => state.footer);
+  const home = useSelector((state) => state.home);
   useEffect(() => {
     dispatch(getheader());
+    dispatch(gethome());
     dispatch(getfooter());
   }, []);
   return (
@@ -33,7 +35,7 @@ const App = () => {
           <Router>
             <Header data={header} />
             <Routes>
-              <Route path="/" element={<Home />} exact />
+              <Route path="/" element={<Home data={home} />} exact />
               <Route path="/risk-fall" element={<RiskFall />} exact />
               <Route
                 path="/assessment"

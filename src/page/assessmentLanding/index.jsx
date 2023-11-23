@@ -2,7 +2,7 @@ import React from "react";
 import "./styles.scss";
 
 import Button from "../../common/button";
-
+import Link from "../../common/Link";
 const AssessmentLanding = () => {
   const data = [
     {
@@ -21,8 +21,12 @@ const AssessmentLanding = () => {
               <p>{item?.description}</p>
             </div>
             <div className="button-container">
-              <Button>Myself</Button>
-              <Button>Someone Else</Button>
+              <Link url={"/assessment/1"}>
+                <Button>Myself</Button>
+              </Link>
+              <Link url={"/assessment/1"}>
+                <Button>Someone Else</Button>
+              </Link>
             </div>
           </div>
         );

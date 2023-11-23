@@ -12,8 +12,10 @@ const Assessment = ({ data }) => {
       <div className="sub-container">
         <h3>Answer the following questions</h3>
       </div>
-      <div>Question 14 of 16</div>
-      <ProgressBar />
+      <div className="question-title">
+        <span className="text">Question 14 of 16</span>
+        <ProgressBar />
+      </div>
       <Question />
     </div>
   );

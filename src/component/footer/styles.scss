@@ -8,9 +8,13 @@
     display: flex;
     flex-direction: column;
     gap: 2.03125rem;
-    img {
-      width: 13.1875rem;
-      height: 1.5625rem;
+    .image {
+      max-width: 13.1875rem;
+      max-height: 1.5625rem;
+      img {
+        height: auto;
+        max-width: 100%;
+      }
     }
     .section-a {
       display: flex;

@@ -1,6 +1,10 @@
 .assessment-container {
-  padding: 24px 16px;
+  padding: 1.5rem 1rem;
   .sub-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0.5rem;
     h3 {
       position: relative;
       color: var(--color-primary-Text);
@@ -15,6 +19,26 @@
         border-bottom: 0.125rem solid var(--primary);
         width: calc(100% - 4.375rem);
         left: 2.1875rem;
+      }
+    }
+  }
+  .question-title {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    .text {
+      color: var(--color-primary-Text);
+      font-size: 0.875rem;
+      font-weight: 400;
+      line-height: 1.3125rem;
+    }
+    .MuiLinearProgress-root {
+      border-radius: 8px;
+      height: 8px;
+      background-color: var(--color-primary-border-Line);
+      .MuiLinearProgress-bar {
+        border-radius: 8px;
       }
     }
   }

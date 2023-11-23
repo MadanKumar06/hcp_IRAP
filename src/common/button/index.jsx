@@ -17,7 +17,6 @@ const Index = (props) => {
     loadingPosition,
     loading,
     onClick,
-    url,
   } = props;
   return (
     <Button
@@ -29,7 +28,6 @@ const Index = (props) => {
       loadingPosition={loadingPosition}
       style={{ backgroundColor: color }}
       onClick={onClick}
-      href={url}
     >
       {children}
     </Button>

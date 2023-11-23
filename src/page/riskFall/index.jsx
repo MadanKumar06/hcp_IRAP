@@ -2,7 +2,7 @@ import React from "react";
 import "./styles.scss";
 
 import Button from "../../common/button";
-
+import Link from "../../common/Link";
 const RiskFall = () => {
   const data = [
     {
@@ -23,7 +23,9 @@ const RiskFall = () => {
               <p>{item?.description}</p>
               <p>{item?.description2}</p>
             </div>
-            <Button>Start the assessment</Button>
+            <Link url={"/assessment"}>
+              <Button>Start the assessment</Button>
+            </Link>
           </div>
         );
       })}

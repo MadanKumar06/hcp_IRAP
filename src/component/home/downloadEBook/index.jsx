@@ -6,34 +6,38 @@ import Button from "../../../common/button";
 import InputField from "../../../common/Input";
 import { InputLabel, Box } from "@mui/material";
 
-const DownloadEBook = () => {
+const DownloadEBook = (props) => {
+  const {
+    button_text,
+    description,
+    email_field,
+    email_input,
+    image,
+    name_field,
+    name_input,
+    title,
+  } = props;
   return (
     <div className="e-bbok-container">
       <div className="image">
-        <img src={Image} alt="e-book" />
+        <img src={image} alt="e-book" />
       </div>
 
       <div className="section">
-        <h3>HealthCraft Wrote the Book on Fall Prevention - Literally!</h3>
-        <span>Download Your Free E-Book ​</span>
+        <h3>{title}</h3>
+        <span>{description} ​</span>
         <Box component="form" noValidate>
           <div className="input-fields">
-            <InputLabel>Full name</InputLabel>
-            <InputField
-              placeholder="Enter your full name"
-              className="inputfield-box"
-            />
+            <InputLabel>{name_field}</InputLabel>
+            <InputField placeholder={name_input} className="inputfield-box" />
           </div>
           <div className="input-fields">
-            <InputLabel>Email address</InputLabel>
-            <InputField
-              placeholder="Enter your email address"
-              className="inputfield-box"
-            />
+            <InputLabel>{email_field}</InputLabel>
+            <InputField placeholder={email_input} className="inputfield-box" />
           </div>
         </Box>
 
-        <Button>Download E-book (PDF-1.5MB)</Button>
+        <Button>{button_text}</Button>
       </div>
     </div>
   );

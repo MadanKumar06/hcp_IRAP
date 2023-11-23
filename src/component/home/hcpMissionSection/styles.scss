@@ -1,5 +1,6 @@
 .hcp-mission-container {
   .image {
+    display: flex;
     img {
       width: 100%;
       height: auto;
@@ -29,7 +30,7 @@
       font-size: 1rem;
       font-weight: 500;
       text-transform: inherit;
-      width: 17rem;
+      min-width: 17rem;
     }
   }
 }

@@ -4,10 +4,12 @@ import "./styles.scss";
 import Button from "../../../common/button";
 const Question = ({ data }) => {
   return (
-    <div>
+    <div className="question-container">
       <p>14. I am sometimes short of breath when standing or walking.</p>
-      <Button>Yes</Button>
-      <Button>No</Button>
+      <div className="btn">
+        <Button>Yes</Button>
+        <Button>No</Button>
+      </div>
     </div>
   );
 };
