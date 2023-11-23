@@ -1,8 +1,8 @@
 
-// Production server
+// Stage server
 module.exports = {
     baseUrl: function () {
-        return "";
+        return "https://mysterious-loss.flywheelsites.com/wp-json/irap/v1";
     },
 };
 

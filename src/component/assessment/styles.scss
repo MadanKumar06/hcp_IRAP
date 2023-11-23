@@ -1,0 +1,21 @@
+.assessment-container {
+  padding: 24px 16px;
+  .sub-container {
+    h3 {
+      position: relative;
+      color: var(--color-primary-Text);
+      font-size: 1.3125rem;
+      font-weight: 600;
+      line-height: 1.9375rem;
+      width: fit-content;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        border-bottom: 0.125rem solid var(--primary);
+        width: calc(100% - 4.375rem);
+        left: 2.1875rem;
+      }
+    }
+  }
+}

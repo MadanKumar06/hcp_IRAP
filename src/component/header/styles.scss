@@ -9,13 +9,22 @@
   justify-content: space-between;
   padding: var(--size16);
   z-index: 1;
-  img {
-    width: 8.44rem;
-    height: var(--size16);
+  .image {
+    // width: 8.44rem;
+    // height: var(--size16);
+    img {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+    }
   }
   .section-right {
     display: flex;
     align-items: center;
     gap: 1.5rem;
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 }

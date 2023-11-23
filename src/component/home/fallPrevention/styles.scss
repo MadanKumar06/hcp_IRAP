@@ -28,3 +28,24 @@
     padding-top: 0;
   }
 }
+
+@media (min-width: 768px) {
+  .fall-prevention-container {
+    flex-direction: row;
+    justify-content: center;
+    min-height: 18.75rem;
+    .sub-container {
+      padding-top: 0;
+      padding-bottom: 0;
+      min-height: 9.375rem;
+      display: flex;
+      justify-content: center;
+    }
+    .sub-container:not(:last-child) {
+      border-right: 1px solid var(--color-primary-border-Line);
+    }
+    .sub-container:not(:last-child) {
+      border-bottom: none;
+    }
+  }
+}

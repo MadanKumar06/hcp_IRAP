@@ -19,8 +19,10 @@ const RiskFall = () => {
         return (
           <div key={index} className="risk-fall-container">
             <h3>{item?.title}</h3>
-            <p>{item?.description}</p>
-            <p>{item?.description2}</p>
+            <div>
+              <p>{item?.description}</p>
+              <p>{item?.description2}</p>
+            </div>
             <Button>Start the assessment</Button>
           </div>
         );
